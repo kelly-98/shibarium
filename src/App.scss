@@ -463,8 +463,27 @@ a {
       }
     }
     .section-journey {
-      padding-top: 168px;
+      position: relative;
+      padding: 168px 0 209px;
+      background: url("./assets/images/img-bg-section-journey.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      .img-section-journey {
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 0;
+      }
+      .img-earth-journey {
+        position: absolute;
+        left: 117px;
+        bottom: 55px;
+      }
       .container {
+        z-index: 1;
+        position: relative;
         .section-title {
           color: #fff;
           font-size: 60px;
@@ -529,7 +548,6 @@ a {
       }
     }
     .section-community {
-      padding-top: 209px;
       .container {
         display: flex;
         justify-content: center;
@@ -591,6 +609,9 @@ a {
     }
     .section-enter-ecosystem {
       padding-top: 108px;
+      background: url("./assets/images/img-bg-section-enter-eco.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
       .container {
         h3 {
           color: #fff;
@@ -615,6 +636,7 @@ a {
           gap: 32px;
           padding-top: 82px;
           .item {
+            position: relative;
             padding: 32px;
             width: 341px;
             height: 466px;
@@ -623,7 +645,40 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            .img-earn {
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            .icon-earn {
+              position: absolute;
+              width: 158px;
+              right: 0;
+              bottom: 150px;
+            }
+            .icon-coin1,
+            .icon-coin2,
+            .icon-coin3 {
+              position: absolute;
+              width: 236px;
+            }
+            .icon-coin1 {
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              z-index: 1;
+            }
+            .icon-coin2 {
+              top: 25px;
+              z-index: 3;
+            }
+            .icon-coin3 {
+              top: 66px;
+              left: 114px;
+              z-index: 2;
+            }
             .title {
+              z-index: 1;
               color: #fff;
               font-size: 13px;
               font-style: normal;
@@ -634,7 +689,8 @@ a {
               text-align: left;
             }
             .sub-title {
-              max-width: 175px;
+              z-index: 1;
+              max-width: 215px;
               color: rgba(255, 255, 255, 0.7);
               font-size: 27.432px;
               font-style: normal;
@@ -648,6 +704,7 @@ a {
               }
             }
             .des {
+              z-index: 1;
               padding-top: 16px;
               color: #fff;
               font-size: 16px;
@@ -655,6 +712,33 @@ a {
               font-weight: 300;
               line-height: 26px;
               text-align: left;
+              max-width: 250px;
+            }
+            &.item-discover {
+              background: url("./assets/images/img-bg-discover.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: top center;
+              .img-earth1,
+              .img-bone,
+              .img-earth2 {
+                position: absolute;
+              }
+              .img-earth1 {
+                left: 0;
+                bottom: 133px;
+                width: 234px;
+              }
+              .img-bone {
+                width: 41px;
+                right: 24px;
+                bottom: 290px;
+              }
+              .img-earth2 {
+                width: 33px;
+                bottom: 390px;
+                right: 20px;
+              }
             }
           }
         }

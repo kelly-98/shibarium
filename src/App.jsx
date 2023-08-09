@@ -20,6 +20,16 @@ import IconConnect from "./assets/images/icon-connect.svg";
 import IconResearch from "./assets/images/icon-research.svg";
 import IconEllippse from "./assets/images/icon-ellipse.svg";
 import IconTriangle from "./assets/images/icon-triangle.svg";
+import ImageEcoEarn from './assets/images/img-eco-earn.svg';
+import IconEcoEarn from './assets/images/icon-eco-earn.svg'
+import IconCoin1 from './assets/images/icon-coin-1.svg.svg'
+import IconCoin2 from './assets/images/icon-coin-2.svg.svg'
+import IconCoin3 from './assets/images/icon-coin-3.svg.svg'
+import ImageEarth1 from './assets/images/img-earth-1.svg'
+import ImageEarth2 from './assets/images/img-earth-2.svg'
+import ImageBone from './assets/images/img-bone.svg'
+import ImageBgJourney from './assets/images/img-bg-section-journey2.svg'
+import ImageEarthJourney from './assets/images/img-earth-journey.svg'
 import "./App.scss";
 
 function App() {
@@ -254,6 +264,12 @@ function App() {
           </div>
         </section>
         <section className="section-journey">
+          <div className="img-section-journey">
+            <img src={ImageBgJourney} alt="" />
+          </div>
+          <div className="img-earth-journey">
+            <img src={ImageEarthJourney} alt="" />
+          </div>
           <div className="container">
             <h3 className="section-title">Join the journey.</h3>
             <div className="journey-list">
@@ -402,6 +418,12 @@ function App() {
             </p>
             <div className="list-system">
               <div className="item">
+                <div className="img-earn">
+                  <img src={ImageEcoEarn} alt="" />
+                </div>
+                <div className="icon-earn">
+                  <img src={IconEcoEarn} alt="" />
+                </div>
                 <p className="title">Trade</p>
                 <p className="sub-title">
                   Fast and safe sniper Bot <MdEast />
@@ -412,23 +434,39 @@ function App() {
                 </p>
               </div>
               <div className="item">
-                <p className="title">Trade</p>
+                <div className="icon-coin1">
+                  <img src={IconCoin1} alt="" />
+                </div>
+                <div className="icon-coin2">
+                  <img src={IconCoin2} alt="" />
+                </div>
+                <div className="icon-coin3">
+                  <img src={IconCoin3} alt="" />
+                </div>
+                <p className="title">Earn</p>
                 <p className="sub-title">
-                  Fast and safe sniper Bot <MdEast />
+                  Staking & Yield farming <MdEast />
                 </p>
                 <p className="des">
-                  Powerful toolkit on Telegram - the flagship crypto platform.
-                  Best support for Shibarium users in trading.
+                  Defi methods for earning passive income by locking up tokens or providing liquidity to our platform.
                 </p>
               </div>
-              <div className="item">
-                <p className="title">Trade</p>
+              <div className="item item-discover">
+                <div className="img-earth1">
+                  <img src={ImageEarth1} alt="" />
+                </div>
+                <div className="img-bone">
+                  <img src={ImageBone} alt="" />
+                </div>
+                <div className="img-earth2">
+                  <img src={ImageEarth2} alt="" />
+                </div>
+                <p className="title">Discover</p>
                 <p className="sub-title">
-                  Fast and safe sniper Bot <MdEast />
+                  Explore the transactions <MdEast />
                 </p>
                 <p className="des">
-                  Powerful toolkit on Telegram - the flagship crypto platform.
-                  Best support for Shibarium users in trading.
+                  Powerful tools are seamlessly integrated, providing users with trading insights.
                 </p>
               </div>
             </div>
