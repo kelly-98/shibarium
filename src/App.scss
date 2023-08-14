@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+input {
+  outline: none;
+}
+
 html,
 body {
   font-family: "Inter", sans-serif;
@@ -82,9 +86,11 @@ a {
         background-position: top right;
         background-repeat: no-repeat;
         display: flex;
+        justify-content: space-between;
         gap: 58px;
         padding-top: 115px;
         .left-content {
+          max-width: 800px;
           .title {
             color: #fff;
             font-size: 70px;
