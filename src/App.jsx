@@ -7,6 +7,35 @@ import {
 } from "react-icons/fa";
 import { IoLogoDiscord } from "react-icons/io5";
 import { PiRedditLogoFill } from "react-icons/pi";
+import ImageHB1 from "./assets/images/h-b-1.svg";
+import ImageHB2 from "./assets/images/h-b-2.svg";
+import ImageHB3 from "./assets/images/h-b-3.svg";
+import ImageHB4 from "./assets/images/h-b-4.svg";
+import ImageHB5 from "./assets/images/h-b-5.svg";
+import ImageH1 from "./assets/images/h-1.svg";
+import ImageH2 from "./assets/images/h-2.svg";
+import ImageH3 from "./assets/images/h-3.svg";
+import ImageH4 from "./assets/images/h-4.svg";
+import ImageH5 from "./assets/images/h-5.svg";
+import ImageH6 from "./assets/images/h-6.svg";
+import ImageH7 from "./assets/images/h-7.svg";
+import ImageH8 from "./assets/images/h-8.svg";
+import ImageH9 from "./assets/images/h-9.svg";
+import ImageH10 from "./assets/images/h-10.svg";
+import ImageHMain from "./assets/images/img-circle.svg";
+
+import E1 from "./assets/images/e-1.svg";
+import E2 from "./assets/images/e-2.svg";
+import EB1 from "./assets/images/e-b-1.svg";
+import EB2 from "./assets/images/e-b-2.svg";
+import EB3 from "./assets/images/e-b-3.svg";
+import EB4 from "./assets/images/e-b-4.svg";
+import EB5 from "./assets/images/e-b-5.svg";
+
+import Value1 from "./assets/images/value-1.svg";
+import Value2 from "./assets/images/value-2.svg";
+import Value3 from "./assets/images/value-3.svg";
+
 import ImageLogo from "./assets/images/img-logo.svg";
 import ImagePhone from "./assets/images/img-phone.svg";
 import ImageShiba from "./assets/images/img-shiba.svg";
@@ -15,21 +44,24 @@ import ImageExchanges from "./assets/images/img-multiple-exchanges.svg";
 import ImagePrivate from "./assets/images/img-private-node.svg";
 import ImageDiamond from "./assets/images/img-diamond.svg";
 import ImageVector from "./assets/images/icon-vector.svg";
+import BoxExchange from "./assets/images/box-exchange.svg";
+import BoxExchangeHover from "./assets/images/box-exchange-hover.svg";
+import ImageVectorHover from "./assets/images/icon-vector-hover.svg";
 import ImageTrading from "./assets/images/img-trading.svg";
 import IconConnect from "./assets/images/icon-connect.svg";
 import IconResearch from "./assets/images/icon-research.svg";
 import IconEllippse from "./assets/images/icon-ellipse.svg";
 import IconTriangle from "./assets/images/icon-triangle.svg";
-import ImageEcoEarn from './assets/images/img-eco-earn.svg';
-import IconEcoEarn from './assets/images/icon-eco-earn.svg'
-import IconCoin1 from './assets/images/icon-coin-1.svg.svg'
-import IconCoin2 from './assets/images/icon-coin-2.svg.svg'
-import IconCoin3 from './assets/images/icon-coin-3.svg.svg'
-import ImageEarth1 from './assets/images/img-earth-1.svg'
-import ImageEarth2 from './assets/images/img-earth-2.svg'
-import ImageBone from './assets/images/img-bone.svg'
-import ImageBgJourney from './assets/images/img-bg-section-journey2.svg'
-import ImageEarthJourney from './assets/images/img-earth-journey.svg'
+import ImageEcoEarn from "./assets/images/img-eco-earn.svg";
+import IconEcoEarn from "./assets/images/icon-eco-earn.svg";
+import IconCoin1 from "./assets/images/icon-coin-1.svg.svg";
+import IconCoin2 from "./assets/images/icon-coin-2.svg.svg";
+import IconCoin3 from "./assets/images/icon-coin-3.svg.svg";
+import ImageEarth1 from "./assets/images/img-earth-1.svg";
+import ImageEarth2 from "./assets/images/img-earth-2.svg";
+import ImageBone from "./assets/images/img-bone.svg";
+import ImageBgJourney from "./assets/images/img-bg-section-journey2.svg";
+import ImageEarthJourney from "./assets/images/img-earth-journey.svg";
 import "./App.scss";
 
 function App() {
@@ -57,8 +89,80 @@ function App() {
           </div>
         </div>
       </header>
+
       <main className="page-main">
         <section className="section-intro">
+          <div className="intro-p intro-p-main">
+            <img src={ImageHMain} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-b-1">
+            <img src={ImageHB1} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-b-4">
+            <img src={ImageHB4} alt="" />
+          </div>
+          <div className="intro-p intro-p-b-4 intro-p-b-4-2">
+            <img src={ImageHB4} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-b-4 intro-p-b-4-3">
+            <img src={ImageHB4} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-b-2">
+            <img src={ImageHB2} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-b-3">
+            <img src={ImageHB3} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-b-5">
+            <img src={ImageHB5} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-1">
+            <img src={ImageH1} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-2">
+            <img src={ImageH2} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-3">
+            <img src={ImageH3} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-4">
+            <img src={ImageH4} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-5">
+            <img src={ImageH5} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-6">
+            <img src={ImageH6} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-7">
+            <img src={ImageH7} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-8">
+            <img src={ImageH8} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-9">
+            <img src={ImageH9} alt="" />
+          </div>
+
+          <div className="intro-p intro-p-10">
+            <img src={ImageH10} alt="" />
+          </div>
+
           <div className="container">
             <div className="left-content">
               <h1 className="title">Easy to trade on Shibarium.</h1>
@@ -72,6 +176,7 @@ function App() {
             </div>
           </div>
         </section>
+
         <section className="section-vision">
           <div className="container">
             <div className="left-content">
@@ -86,14 +191,14 @@ function App() {
                 ecosystem for enthusiasts to trade crypto directly on Telegram.
               </p>
               <div className="actions">
-                <button className="btn-left">
+                <a className="btn-left">
                   Resources
                   <MdEast />
-                </button>
-                <button className="btn-right">
+                </a>
+                <a className="btn-right">
                   Documentations
                   <MdEast />
-                </button>
+                </a>
               </div>
             </div>
             <div className="right-content">
@@ -108,7 +213,33 @@ function App() {
             </div>
           </div>
         </section>
+
         <section className="section-ecosystem">
+          <div className="ecosystem-p ecosystem-p-main">
+            <img src={ImageHMain} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-1">
+            <img src={E1} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-2">
+            <img src={E2} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-b-1">
+            <img src={EB1} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-b-2">
+            <img src={EB2} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-b-3">
+            <img src={EB3} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-b-4">
+            <img src={EB4} alt="" />
+          </div>
+          <div className="ecosystem-p ecosystem-p-b-5">
+            <img src={EB5} alt="" />
+          </div>
+
           <div className="container">
             <p className="section-title">Enter the ECOSYSTEM</p>
             <div className="content-top">
@@ -119,7 +250,9 @@ function App() {
               </p>
             </div>
             <div className="content-bottom">
-              <img src={ImageShiba} alt="" />
+              <div className="content-bottom-left rotate">
+                <img src={ImageShiba} alt="" />
+              </div>
               <div className="core-boxes">
                 <div className="box">
                   <div className="box-img">
@@ -169,13 +302,14 @@ function App() {
               </div>
             </div>
             <div className="action">
-              <button className="btn-trade">
+              <a className="btn-trade">
                 Trade Now
                 <MdEast />
-              </button>
+              </a>
             </div>
           </div>
         </section>
+
         <section className="section-features">
           <div className="container">
             <div className="section-top">
@@ -193,8 +327,12 @@ function App() {
                 <div className="box-chain box-feature">
                   <p className="box-title">Cross-chain Bridge</p>
                   <div className="box-img">
-                    <img src={ImageDiamond} alt="" />
-                    <img src={ImageVector} alt="" />
+                    <div className="box-img-1">
+                      <img src={ImageDiamond} alt="" />
+                    </div>
+                    <div className="box-img-2">
+                      <img src={ImageVectorHover} alt="" />
+                    </div>
                   </div>
                   <h3>Transfer assets from cross-chain on the same wallet.</h3>
                   <p className="text-bottom">Coming soon</p>
@@ -205,6 +343,19 @@ function App() {
                   <p className="box-title">Decentralized Exchange</p>
                   <h3>Swap tokens & collectibles.</h3>
                   <p className="text-bottom">Coming soon</p>
+
+                  <div className="box-exchange-img">
+                    <img
+                      className="box-exchange-img-not-hover"
+                      src={BoxExchange}
+                      alt=""
+                    />
+                    <img
+                      className="box-exchange-img-hover"
+                      src={BoxExchangeHover}
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div className="box-row">
                   <div className="box-farm box-feature">
@@ -222,7 +373,18 @@ function App() {
             </div>
           </div>
         </section>
+
         <section className="section-values">
+          <div className="value-p value-p-1">
+            <img src={Value2} alt="" />
+          </div>
+          <div className="value-p value-p-2">
+            <img src={Value1} alt="" />
+          </div>
+          <div className="value-p value-p-3">
+            <img src={Value3} alt="" />
+          </div>
+
           <div className="container">
             <p className="section-title">Our values</p>
             <div className="row justify-between">
@@ -263,6 +425,7 @@ function App() {
             </div>
           </div>
         </section>
+
         <section className="section-journey">
           <div className="img-section-journey">
             <img src={ImageBgJourney} alt="" />
@@ -288,7 +451,45 @@ function App() {
                       Easy and safe with PCI DSS security certificate.
                     </p>
                   </div>
-                  <img src={IconConnect} alt="" />
+                  <div className="journey-item-hover-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none">
+                      <path
+                        d="M4.08824 30.1999C5.79383 30.1999 7.17648 28.8173 7.17648 27.1117C7.17648 25.4061 5.79383 24.0234 4.08824 24.0234C2.38265 24.0234 1 25.4061 1 27.1117C1 28.8173 2.38265 30.1999 4.08824 30.1999Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M27.9115 30.1999C29.6171 30.1999 30.9997 28.8173 30.9997 27.1117C30.9997 25.4061 29.6171 24.0234 27.9115 24.0234C26.2059 24.0234 24.8232 25.4061 24.8232 27.1117C24.8232 28.8173 26.2059 30.1999 27.9115 30.1999Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M16.0003 8.13742C17.7059 8.13742 19.0886 6.75477 19.0886 5.04918C19.0886 3.34359 17.7059 1.96094 16.0003 1.96094C14.2948 1.96094 12.9121 3.34359 12.9121 5.04918C12.9121 6.75477 14.2948 8.13742 16.0003 8.13742Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M14.0242 8.57422L5.62305 23.5762"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M17.9756 8.57422L26.3767 23.5762"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        d="M8.05859 27.1055H23.9409"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
               <div className="journey-item">
@@ -306,7 +507,20 @@ function App() {
                       Shibarium through blockchain platforms.
                     </p>
                   </div>
-                  <img src={IconResearch} alt="" />
+                  <div className="journey-item-hover-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="32"
+                      viewBox="0 0 34 32"
+                      fill="none">
+                      <path
+                        d="M17 30.6604L32 16.3083L17.0002 1.95703M17 30.6604L2 16.3083L17.0002 1.95703M17 30.6604L9.06396 16.3083L17.0002 1.95703M17 30.6604L24.9363 16.3083L17.0002 1.95703"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
               <div className="journey-item">
@@ -324,15 +538,40 @@ function App() {
                       smart contracts and earn profits through Shibarium Bot.
                     </p>
                   </div>
-                  <div className="">
-                    <img src={IconEllippse} alt="" />
-                    <img src={IconTriangle} alt="" />
+                  <div className="journey-item-hover-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none">
+                      <path
+                        d="M16.25 8C16.25 11.9619 12.8237 15.25 8.5 15.25C4.17631 15.25 0.75 11.9619 0.75 8C0.75 4.03812 4.17631 0.75 8.5 0.75C12.8237 0.75 16.25 4.03812 16.25 8Z"
+                        stroke="white"
+                        stroke-opacity="0.9"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="19"
+                      viewBox="0 0 26 19"
+                      fill="none">
+                      <path
+                        d="M9.99176 1H2L13.0661 16.9351L24.1322 1H15.1404L14.6743 1.0932C13.2826 1.3715 11.8496 1.3715 10.4579 1.0932L9.99176 1Z"
+                        stroke="white"
+                        stroke-opacity="0.9"
+                        stroke-width="1.5"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <section className="section-community">
           <div className="container">
             <div className="left-content">
@@ -409,6 +648,7 @@ function App() {
             </div>
           </div>
         </section>
+
         <section className="section-enter-ecosystem">
           <div className="container">
             <h3>Enter the Ecosystem</h3>
@@ -448,7 +688,8 @@ function App() {
                   Staking & Yield farming <MdEast />
                 </p>
                 <p className="des">
-                  Defi methods for earning passive income by locking up tokens or providing liquidity to our platform.
+                  Defi methods for earning passive income by locking up tokens
+                  or providing liquidity to our platform.
                 </p>
               </div>
               <div className="item item-discover">
@@ -466,12 +707,14 @@ function App() {
                   Explore the transactions <MdEast />
                 </p>
                 <p className="des">
-                  Powerful tools are seamlessly integrated, providing users with trading insights.
+                  Powerful tools are seamlessly integrated, providing users with
+                  trading insights.
                 </p>
               </div>
             </div>
           </div>
         </section>
+
         <section className="section-become-partner">
           <div className="container row justify-center">
             <div className="left-content">
@@ -485,6 +728,7 @@ function App() {
           </div>
         </section>
       </main>
+
       <footer className="page-footer">
         <div className="container">
           <div className="main-footer">
@@ -577,24 +821,24 @@ function App() {
           <div className="footer-bottom">
             <p>Copyright 2023, All Rights Reserved</p>
             <ul>
-              <li>
-                <FaMedium size={24} color="rgba(255, 255, 255, 1)" />
-              </li>
-              <li>
-                <FaTwitter size={24} color="rgba(255, 255, 255, 1)" />
-              </li>
-              <li>
-                <PiRedditLogoFill size={24} color="rgba(255, 255, 255, 1)" />
-              </li>
-              <li>
-                <FaTelegramPlane size={24} color="rgba(255, 255, 255, 1)" />
-              </li>
-              <li>
-                <IoLogoDiscord size={24} color="rgba(255, 255, 255, 1)" />
-              </li>
-              <li>
-                <FaYoutube size={24} color="rgba(255, 255, 255, 1)" />
-              </li>
+              <a>
+                <FaMedium size={24} color="#808080" />
+              </a>
+              <a>
+                <FaTwitter size={24} color="#808080" />
+              </a>
+              <a>
+                <PiRedditLogoFill size={24} color="#808080" />
+              </a>
+              <a>
+                <FaTelegramPlane size={24} color="#808080" />
+              </a>
+              <a>
+                <IoLogoDiscord size={24} color="#808080" />
+              </a>
+              <a>
+                <FaYoutube size={24} color="#808080" />
+              </a>
             </ul>
           </div>
         </div>
