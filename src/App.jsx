@@ -8,7 +8,7 @@ import {
 import { IoLogoDiscord } from "react-icons/io5";
 import { PiRedditLogoFill } from "react-icons/pi";
 
-import video from './assets/video/video.mp4'
+import video from "./assets/video/video.mp4";
 import ImageHB1 from "./assets/images/h-b-1.svg";
 import ImageHB2 from "./assets/images/h-b-2.svg";
 import ImageHB3 from "./assets/images/h-b-3.svg";
@@ -106,8 +106,7 @@ function App() {
             href="https://t.me/ShibariumBot_Verify"
             target="_blank"
             rel="noopener noreferrer"
-            className="header-right"
-          >
+            className="header-right">
             <span>Get $SBOT</span>
             <MdEast />
           </a>
@@ -197,7 +196,12 @@ function App() {
             </div>
             <div data-aos="fade-left" className="right-content">
               <img src={ImagePhone} alt="" />
-              <video className="right-content-video" autoPlay muted loop playsInline>
+              <video
+                className="right-content-video"
+                autoPlay
+                muted
+                loop
+                playsInline>
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -221,15 +225,13 @@ function App() {
               <div className="actions">
                 <a
                   href="https://shibariumbot.gitbook.io/docs/"
-                  className="btn-left"
-                >
+                  className="btn-left">
                   Resources
                   <MdEast />
                 </a>
                 <a
                   href="https://shibariumbot.gitbook.io/docs/"
-                  className="btn-right"
-                >
+                  className="btn-right">
                   Documentations
                   <MdEast />
                 </a>
@@ -444,7 +446,10 @@ function App() {
                 <div className="info-values">
                   <p className="info-title">Proof-of-transaction</p>
                   <p className="value row align-center">
-                    99% <span>First block transactions</span>
+                    99%{" "}
+                    <span>
+                      First block <br /> transactions
+                    </span>
                   </p>
                   <p className="note">
                     The earliest interaction with smart contracts.
@@ -478,8 +483,7 @@ function App() {
               width="864"
               height="562"
               viewBox="0 0 864 562"
-              fill="none"
-            >
+              fill="none">
               <path
                 d="M244.483 278.541C223.684 307.671 214.739 334.428 218.815 355.044C222.883 375.622 239.742 389.128 267.135 393.6C294.537 398.075 331.046 393.269 371.508 379.836C411.966 366.404 454.308 345.034 492.547 318.744C530.787 292.455 562.979 262.582 584.58 233.352C606.186 204.116 616.073 177.042 612.93 155.948C611.358 145.413 606.575 136.626 598.861 129.834C591.143 123.039 580.48 118.227 567.142 115.657C540.455 110.524 504.45 114.651 464.206 127.486M249.203 230.642C193.77 275.2 155.989 320.517 142.615 358.425C135.931 377.374 135.573 393.825 141.229 407.166C146.883 420.504 158.566 430.779 176.055 437.344C211.052 450.481 266.922 447.869 333.634 429.917C400.334 411.968 473.443 379.878 539.794 339.423C606.146 298.966 661.364 252.812 695.515 209.276C712.589 187.509 723.829 167.12 729.002 148.972C734.176 130.823 733.28 114.931 726.116 102.124C718.953 89.3173 705.733 79.9726 687.283 74.3722C668.827 68.7801 645.16 66.9369 617.138 69.1294C561.091 73.5192 491.375 93.7413 420.535 126.178M10.2303 519.633C58.0374 600.799 285.68 559.7 518.685 427.837C751.689 295.974 901.819 123.281 854.016 42.1166C806.207 -39.0505 578.566 2.04479 345.56 133.91C112.556 265.773 -37.5768 438.467 10.2303 519.633Z"
                 stroke="white"
@@ -515,8 +519,7 @@ function App() {
                       width="32"
                       height="33"
                       viewBox="0 0 32 33"
-                      fill="none"
-                    >
+                      fill="none">
                       <path
                         d="M4.08824 30.1999C5.79383 30.1999 7.17648 28.8173 7.17648 27.1117C7.17648 25.4061 5.79383 24.0234 4.08824 24.0234C2.38265 24.0234 1 25.4061 1 27.1117C1 28.8173 2.38265 30.1999 4.08824 30.1999Z"
                         stroke="white"
@@ -554,8 +557,7 @@ function App() {
               <div
                 className="journey-item"
                 data-aos="fade-up"
-                data-aos-delay="100"
-              >
+                data-aos-delay="100">
                 <p className="title">Research</p>
                 <div className="column-between">
                   <div>
@@ -576,8 +578,7 @@ function App() {
                       width="34"
                       height="32"
                       viewBox="0 0 34 32"
-                      fill="none"
-                    >
+                      fill="none">
                       <path
                         d="M17 30.6604L32 16.3083L17.0002 1.95703M17 30.6604L2 16.3083L17.0002 1.95703M17 30.6604L9.06396 16.3083L17.0002 1.95703M17 30.6604L24.9363 16.3083L17.0002 1.95703"
                         stroke="white"
@@ -590,8 +591,7 @@ function App() {
               <div
                 className="journey-item"
                 data-aos="fade-up"
-                data-aos-delay="200"
-              >
+                data-aos-delay="200">
                 <p className="title">Trade</p>
                 <div className="column-between">
                   <div>
@@ -612,8 +612,7 @@ function App() {
                       width="17"
                       height="16"
                       viewBox="0 0 17 16"
-                      fill="none"
-                    >
+                      fill="none">
                       <path
                         d="M16.25 8C16.25 11.9619 12.8237 15.25 8.5 15.25C4.17631 15.25 0.75 11.9619 0.75 8C0.75 4.03812 4.17631 0.75 8.5 0.75C12.8237 0.75 16.25 4.03812 16.25 8Z"
                         stroke="white"
@@ -626,8 +625,7 @@ function App() {
                       width="26"
                       height="19"
                       viewBox="0 0 26 19"
-                      fill="none"
-                    >
+                      fill="none">
                       <path
                         d="M9.99176 1H2L13.0661 16.9351L24.1322 1H15.1404L14.6743 1.0932C13.2826 1.3715 11.8496 1.3715 10.4579 1.0932L9.99176 1Z"
                         stroke="white"
@@ -659,8 +657,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="row"
-                  data-aos="fade-left"
-                >
+                  data-aos="fade-left">
                   <FaTelegramPlane color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -681,8 +678,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="row"
                   data-aos="fade-left"
-                  data-aos-delay="100"
-                >
+                  data-aos-delay="100">
                   <FaTwitter color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -878,8 +874,7 @@ function App() {
                 <a
                   href="https://t.me/ShibariumBot_Verify"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   Telegram
                 </a>
               </li>
@@ -890,8 +885,7 @@ function App() {
                 <a
                   href="https://twitter.com/Shibarium_bot"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   Twitter
                 </a>
               </li>
@@ -926,8 +920,7 @@ function App() {
               <a
                 href="https://twitter.com/Shibarium_bot"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaTwitter size={24} color="#808080" />
               </a>
               <a>
@@ -936,8 +929,7 @@ function App() {
               <a
                 href="https://t.me/ShibariumBot_Verify"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <FaTelegramPlane size={24} color="#808080" />
               </a>
               <a>

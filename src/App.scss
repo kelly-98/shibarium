@@ -203,8 +203,15 @@ a {
         position: relative;
         z-index: 9999;
         display: flex;
-        gap: 150px;
+        // justify-content: space-between;
+        gap: 400px;
         padding-top: 115px;
+        @media screen and (max-width: 1750px) {
+          gap: 300px;
+        }
+        @media screen and (max-width: 1550px) {
+          gap: 200px;
+        }
         @media screen and (max-width: 1050px) {
           gap: 100px;
           flex-direction: column;
@@ -913,12 +920,14 @@ a {
               line-height: 1;
             }
             span {
-              color: #fff;
+              display: inline-block;
+              margin-top: 50px;
               font-size: 27.432px;
               font-style: normal;
               font-weight: 700;
               line-height: 36.1px;
               letter-spacing: -0.726px;
+              color: #fff;
             }
           }
           .note {
