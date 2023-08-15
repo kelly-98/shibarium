@@ -7,6 +7,8 @@ import {
 } from "react-icons/fa";
 import { IoLogoDiscord } from "react-icons/io5";
 import { PiRedditLogoFill } from "react-icons/pi";
+
+import video from './assets/video/video.mp4'
 import ImageHB1 from "./assets/images/h-b-1.svg";
 import ImageHB2 from "./assets/images/h-b-2.svg";
 import ImageHB3 from "./assets/images/h-b-3.svg";
@@ -100,7 +102,12 @@ function App() {
               </li>
             </ul>
           </nav>
-          <a className="header-right">
+          <a
+            href="https://t.me/ShibariumBot_Verify"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header-right"
+          >
             <span>Get $SBOT</span>
             <MdEast />
           </a>
@@ -190,6 +197,10 @@ function App() {
             </div>
             <div data-aos="fade-left" className="right-content">
               <img src={ImagePhone} alt="" />
+              <video className="right-content-video" autoPlay muted loop playsInline>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </section>
@@ -643,7 +654,13 @@ function App() {
             </div>
             <div className="right-content">
               <ul>
-                <li className="row" data-aos="fade-left">
+                <a
+                  href="https://t.me/ShibariumBot_Verify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="row"
+                  data-aos="fade-left"
+                >
                   <FaTelegramPlane color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -657,8 +674,15 @@ function App() {
                       community on Telegram.
                     </p>
                   </div>
-                </li>
-                <li className="row" data-aos="fade-left" data-aos-delay="100">
+                </a>
+                <a
+                  href="https://twitter.com/Shibarium_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="row"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
                   <FaTwitter color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -672,8 +696,8 @@ function App() {
                       developer team.
                     </p>
                   </div>
-                </li>
-                <li className="row" data-aos="fade-left" data-aos-delay="200">
+                </a>
+                <a className="row" data-aos="fade-left" data-aos-delay="200">
                   <IoLogoDiscord color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -687,8 +711,8 @@ function App() {
                       developer on the Community Discord.
                     </p>
                   </div>
-                </li>
-                <li className="row" data-aos="fade-left" data-aos-delay="300">
+                </a>
+                <a className="row" data-aos="fade-left" data-aos-delay="300">
                   <FaMedium color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -702,7 +726,7 @@ function App() {
                       interested in Shibarium Bot's mission? Read our blog.
                     </p>
                   </div>
-                </li>
+                </a>
               </ul>
             </div>
           </div>
@@ -851,13 +875,25 @@ function App() {
                 <a href="">Participate</a>
               </li>
               <li>
-                <a href="">Telegram</a>
+                <a
+                  href="https://t.me/ShibariumBot_Verify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Telegram
+                </a>
               </li>
               <li>
                 <a href="">Discord</a>
               </li>
               <li>
-                <a href="">Twitter</a>
+                <a
+                  href="https://twitter.com/Shibarium_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
               </li>
               <li>
                 <a href="">Medium</a>
@@ -887,13 +923,21 @@ function App() {
               <a>
                 <FaMedium size={24} color="#808080" />
               </a>
-              <a>
+              <a
+                href="https://twitter.com/Shibarium_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter size={24} color="#808080" />
               </a>
               <a>
                 <PiRedditLogoFill size={24} color="#808080" />
               </a>
-              <a>
+              <a
+                href="https://t.me/ShibariumBot_Verify"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTelegramPlane size={24} color="#808080" />
               </a>
               <a>

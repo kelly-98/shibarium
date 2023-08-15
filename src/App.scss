@@ -203,7 +203,6 @@ a {
         position: relative;
         z-index: 9999;
         display: flex;
-        // justify-content: space-between;
         gap: 150px;
         padding-top: 115px;
         @media screen and (max-width: 1050px) {
@@ -219,9 +218,8 @@ a {
         .left-content {
           position: relative;
           z-index: 999;
-          max-width: 800px;
+          max-width: 555px;
           .title {
-            // color: #fff;
             font-size: 70px;
             font-weight: 800;
             padding-bottom: 25px;
@@ -249,6 +247,15 @@ a {
             width: 289px;
             position: relative;
             z-index: 999;
+          }
+          &-video {
+            position: absolute;
+            width: 260px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            border-radius: 10px;
           }
         }
       }
@@ -293,6 +300,9 @@ a {
           bottom: 12%;
           left: 10%;
           animation: move1 1s ease-in 1 alternate-reverse;
+          @media screen and (max-width: 600px) {
+            left: -10%;
+          }
         }
         &-2 {
           bottom: 25%;
@@ -329,6 +339,9 @@ a {
           top: 45%;
           right: 10%;
           animation: move2 1s ease-in 1 alternate-reverse;
+          @media screen and (max-width: 600px) {
+            right: -4%;
+          }
         }
         &-9 {
           top: 68%;
@@ -340,6 +353,9 @@ a {
           top: 85%;
           right: 13%;
           animation: move1 1s ease-in 1 alternate-reverse;
+          @media screen and (max-width: 600px) {
+            right: -5%;
+          }
         }
       }
     }
@@ -355,6 +371,7 @@ a {
           padding-top: 100px;
         }
         .left-content {
+          max-width: 676px;
           .content-top {
             color: rgba(255, 255, 255, 0.5);
             font-size: 15px;
@@ -497,6 +514,8 @@ a {
           display: flex;
           align-items: center;
           padding-top: 32px;
+          max-width: 1000px;
+          margin: 0 auto;
           @media screen and (max-width: 1050px) {
             flex-direction: column;
             gap: 30px;
@@ -642,10 +661,16 @@ a {
           &-2 {
             top: 15%;
             left: -30%;
+            @media screen and (max-width: 600px) {
+              width: 300px;
+            }
           }
           &-3 {
             top: 30%;
             left: -5%;
+            @media screen and (max-width: 600px) {
+              width: 300px;
+            }
           }
           &-4 {
             top: 54%;
@@ -658,6 +683,7 @@ a {
             @media screen and (max-width: 600px) {
               left: 13%;
               top: 25%;
+              width: 300px;
             }
           }
           &-5 {
@@ -1143,7 +1169,7 @@ a {
             @media screen and (max-width: 600px) {
               grid-template-columns: repeat(1, 1fr);
             }
-            li {
+            a {
               .content {
                 padding-left: 32px;
                 h4 {
@@ -1323,10 +1349,6 @@ a {
               max-width: 250px;
             }
             &.item-discover {
-              // background: url("./assets/images/img-bg-discover.svg");
-              // background-repeat: no-repeat;
-              // background-size: cover;
-              // background-position: top center;
               transition: all 0.5s linear;
               &:hover {
                 .img-earth1 {
@@ -1361,8 +1383,8 @@ a {
               }
               .img-bone {
                 width: 41px;
-                right: 24px;
-                bottom: 290px;
+                right: 95px;
+                bottom: 270px;
               }
               .img-earth2 {
                 width: 33px;
