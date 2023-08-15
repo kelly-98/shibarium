@@ -131,6 +131,10 @@ a {
     z-index: 10;
     @media screen and (max-width: 1300px) {
       width: 90%;
+      padding: 0 20px;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 0 15px;
     }
     // @media screen and (max-width: 1050px) {
     //   width: 95%;
@@ -345,6 +349,11 @@ a {
         padding-top: 55px;
         display: flex;
         gap: 134px;
+        @media screen and (max-width: 1050px) {
+          gap: 50px;
+          flex-direction: column;
+          padding-top: 100px;
+        }
         .left-content {
           .content-top {
             color: rgba(255, 255, 255, 0.5);
@@ -362,6 +371,13 @@ a {
             font-style: normal;
             font-weight: 800;
             line-height: 60px;
+            @media screen and (max-width: 1050px) {
+              font-size: 50px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 37px;
+              line-height: 50px;
+            }
           }
           .content-bottom {
             padding-top: 27px;
@@ -377,12 +393,20 @@ a {
             display: flex;
             align-items: center;
             gap: 75px;
+            @media screen and (max-width: 600px) {
+              gap: 40px;
+              flex-direction: column;
+              align-items: flex-start;
+            }
             .btn-left,
             .btn-right {
               padding: 24px 20px;
               display: flex;
               align-items: center;
               gap: 17px;
+              @media screen and (max-width: 600px) {
+                gap: 15px;
+              }
             }
             .btn-left {
               border-radius: 10px;
@@ -391,7 +415,7 @@ a {
                 0px 2px 4px 0px rgba(0, 0, 0, 0.04),
                 0px 0px 1px 0px rgba(0, 0, 0, 0.04);
               color: #000;
-              font-size: 20.328px;
+              font-size: 20px;
               font-style: normal;
               font-weight: 600;
               line-height: 27.449px;
@@ -419,9 +443,20 @@ a {
           }
         }
         .right-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 30px;
+          @media screen and (max-width: 1050px) {
+            flex-direction: row;
+          }
+
           .content-top,
           .content-bottom {
             padding: 48px;
+            @media screen and (max-width: 600px) {
+              padding: 0;
+            }
             h3 {
               color: #fff;
               font-size: 76.76px;
@@ -429,6 +464,9 @@ a {
               font-weight: 800;
               line-height: 100.55px;
               letter-spacing: -4.937px;
+              @media screen and (max-width: 1050px) {
+                font-size: 60px;
+              }
             }
             p {
               color: rgba(255, 255, 255, 0.82);
@@ -459,6 +497,11 @@ a {
           display: flex;
           align-items: center;
           padding-top: 32px;
+          @media screen and (max-width: 1050px) {
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+          }
           h3 {
             color: #fff;
             text-align: right;
@@ -468,6 +511,15 @@ a {
             line-height: 60px;
             border-right: 1px solid #fff;
             padding-right: 16px;
+            @media screen and (max-width: 1050px) {
+              font-size: 50px;
+              border-right: 0;
+              text-align: center;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 37px;
+              line-height: 50px;
+            }
           }
           p {
             color: rgba(255, 255, 255, 0.82);
@@ -483,18 +535,31 @@ a {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          gap: 235px;
+          gap: 200px;
           padding-top: 87px;
+          @media screen and (max-width: 1250px) {
+            gap: 100px;
+          }
+          @media screen and (max-width: 1050px) {
+            flex-direction: column;
+            padding-top: 0px;
+          }
           &-left {
             margin-top: 200px;
             width: 300px;
             flex-shrink: 0;
+            @media screen and (max-width: 1050px) {
+              width: 250px;
+              margin-top: 100px;
+            }
           }
           .core-boxes {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 64px;
-
+            @media screen and (max-width: 600px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
             .box {
               .box-img {
                 width: 92px;
@@ -530,6 +595,9 @@ a {
           display: flex;
           justify-content: flex-end;
           padding-top: 89px;
+          @media screen and (max-width: 1050px) {
+            justify-content: flex-start;
+          }
           .btn-trade {
             border-radius: 10.02px;
             background: #fff;
@@ -583,6 +651,14 @@ a {
             top: 54%;
             left: 7.5%;
             animation: scale1 5s linear infinite alternate-reverse;
+            @media screen and (max-width: 1050px) {
+              left: 22%;
+              top: 36%;
+            }
+            @media screen and (max-width: 600px) {
+              left: 13%;
+              top: 25%;
+            }
           }
           &-5 {
             bottom: -50%;
@@ -592,6 +668,8 @@ a {
       }
     }
     .section-features {
+      position: relative;
+      z-index: 9999;
       .container {
         padding-top: 122px;
         .section-top {
@@ -601,6 +679,13 @@ a {
             font-weight: 800;
             line-height: 79.119px;
             color: #fff;
+            @media screen and (max-width: 1050px) {
+              font-size: 50px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 37px;
+              line-height: 50px;
+            }
           }
           p {
             display: flex;
@@ -619,8 +704,14 @@ a {
           padding-top: 24px;
           display: flex;
           gap: 40px;
+          @media screen and (max-width: 1050px) {
+            flex-direction: column;
+          }
           .content-left {
             width: 40%;
+            @media screen and (max-width: 1050px) {
+              width: 100%;
+            }
             h3 {
               margin-top: -150px;
               font-size: 50.512px;
@@ -630,6 +721,13 @@ a {
               letter-spacing: -2.684px;
               padding-right: 98px;
               padding-bottom: 25px;
+              @media screen and (max-width: 1050px) {
+                padding-right: 50px;
+              }
+              @media screen and (max-width: 600px) {
+                font-size: 45px;
+                padding-right: 0;
+              }
             }
             .box-img {
               display: flex;
@@ -652,6 +750,9 @@ a {
             flex-direction: column;
             justify-content: space-between;
             gap: 23px;
+            @media screen and (max-width: 1050px) {
+              width: 100%;
+            }
             h3 {
               font-size: 37.904px;
               font-style: normal;
@@ -668,6 +769,12 @@ a {
                 position: absolute;
                 top: 0;
                 right: 0;
+                @media screen and (max-width: 1050px) {
+                  width: 330px;
+                }
+                @media screen and (max-width: 600px) {
+                  display: none;
+                }
               }
               .box-exchange-img-not-hover {
                 opacity: 1;
@@ -686,6 +793,9 @@ a {
               display: grid;
               grid-template-columns: repeat(2, 1fr);
               gap: 31px;
+              @media screen and (max-width: 600px) {
+                grid-template-columns: repeat(1, 1fr);
+              }
             }
           }
         }
@@ -694,6 +804,7 @@ a {
     .section-values {
       padding-top: 131px;
       position: relative;
+      z-index: 999;
       .container {
         .section-title {
           color: rgba(255, 255, 255, 0.5);
@@ -706,9 +817,19 @@ a {
         }
         .row {
           gap: 136px;
+          @media screen and (max-width: 1050px) {
+            gap: 100px;
+            flex-direction: column;
+          }
+          @media screen and (max-width: 600px) {
+            gap: 50px;
+          }
         }
         .left-content {
           width: 50%;
+          @media screen and (max-width: 1050px) {
+            width: 100%;
+          }
           h3 {
             background: linear-gradient(229deg, #ffd8b4 4.17%, #ffc8f0 45.71%);
             background-clip: text;
@@ -718,6 +839,13 @@ a {
             font-style: normal;
             font-weight: 800;
             line-height: 79.119px;
+            @media screen and (max-width: 1050px) {
+              font-size: 50px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 45px;
+              line-height: 50px;
+            }
           }
           .content-1 {
             padding: 47px 0 19px;
@@ -733,6 +861,9 @@ a {
         }
         .info-values {
           padding-top: 128px;
+          @media screen and (max-width: 1050px) {
+            padding-top: 60px;
+          }
           .info-title {
             color: rgba(255, 255, 255, 0.5);
             font-size: 16px;
@@ -751,6 +882,10 @@ a {
             letter-spacing: -6.581px;
             gap: 63px;
             flex-shrink: 0;
+            @media screen and (max-width: 600px) {
+              font-size: 100px;
+              line-height: 1;
+            }
             span {
               color: #fff;
               font-size: 27.432px;
@@ -771,6 +906,9 @@ a {
         }
         .right-content {
           padding-top: 110px;
+          @media screen and (max-width: 1050px) {
+            padding-top: 0;
+          }
           .info-values {
             &:last-child {
               padding-top: 99px;
@@ -783,7 +921,7 @@ a {
         position: absolute;
         &-1 {
           right: 35%;
-          z-index: 99;
+          z-index: 1;
         }
         &-2 {
           top: -60%;
@@ -798,6 +936,9 @@ a {
     .section-journey {
       position: relative;
       padding: 168px 0 209px;
+      @media screen and (max-width: 1050px) {
+        padding: 168px 0 150px;
+      }
       .img-section-journey {
         left: 40%;
         transform: translateX(-50%);
@@ -839,20 +980,27 @@ a {
           line-height: normal;
           padding-bottom: 45px;
           text-align: center;
+          @media screen and (max-width: 1050px) {
+            font-size: 50px;
+          }
         }
         .journey-list {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 32px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+          @media screen and (max-width: 1050px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
           .journey-item {
             color: #fff;
-            width: 341px;
-            height: 398px;
-            padding: 32px;
+            min-height: 398px;
+            padding: 30px;
             border-radius: 20px;
             background: #171717;
             transition: all 0.5s linear;
+            @media screen and (max-width: 1050px) {
+              min-height: 300px;
+            }
             &-hover {
               &-1,
               &-2,
@@ -946,6 +1094,10 @@ a {
         display: flex;
         justify-content: center;
         gap: 157px;
+        @media screen and (max-width: 1050px) {
+          flex-direction: column;
+          gap: 100px;
+        }
         .left-content {
           h3 {
             color: #fff;
@@ -954,6 +1106,14 @@ a {
             font-weight: 800;
             line-height: 79.119px;
             max-width: 355px;
+            @media screen and (max-width: 1050px) {
+              max-width: 100%;
+              font-size: 50px;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 45px;
+              line-height: 50px;
+            }
           }
           p {
             max-width: 415px;
@@ -964,13 +1124,25 @@ a {
             font-weight: 200;
             line-height: 34.023px;
             letter-spacing: -0.156px;
+            @media screen and (max-width: 1050px) {
+              max-width: 100%;
+            }
           }
         }
         .right-content {
           ul {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             gap: 68px;
+            @media screen and (max-width: 1050px) {
+              gap: 40px;
+              grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width: 600px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
             li {
               .content {
                 padding-left: 32px;
@@ -1008,6 +1180,9 @@ a {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      @media screen and (max-width: 1050px) {
+        padding-bottom: 50px;
+      }
       .container {
         h3 {
           color: #fff;
@@ -1016,6 +1191,15 @@ a {
           font-style: normal;
           font-weight: 800;
           line-height: 79.119px;
+          margin-bottom: 20px;
+
+          @media screen and (max-width: 1050px) {
+            font-size: 50px;
+          }
+          @media screen and (max-width: 600px) {
+            font-size: 40px;
+            line-height: 50px;
+          }
         }
         p {
           color: rgba(255, 255, 255, 0.82);
@@ -1027,16 +1211,21 @@ a {
           letter-spacing: -0.156px;
         }
         .list-system {
-          display: flex;
-          justify-content: center;
-          gap: 32px;
+          // display: flex;
+          // justify-content: center;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
           padding-top: 82px;
+          @media screen and (max-width: 1050px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
           .item {
             position: relative;
             overflow: hidden;
-            padding: 32px;
-            width: 341px;
-            height: 466px;
+            padding: 30px;
+            // width: 341px;
+            min-height: 466px;
             border-radius: 20px;
             background: #171717;
             display: flex;
@@ -1187,8 +1376,19 @@ a {
     }
     .section-become-partner {
       padding: 136px 0 90px;
+      @media screen and (max-width: 1050px) {
+        padding: 120px 0 80px;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 80px 0 80px;
+      }
       .container {
         gap: 128px;
+        @media screen and (max-width: 1050px) {
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+        }
         .left-content {
           h3 {
             color: #fff;
@@ -1210,7 +1410,7 @@ a {
         .right-content {
           position: relative;
           input {
-            width: 373px;
+            // width: 373px;
             border-radius: 8px;
             background: rgba(255, 255, 255, 0.1);
             padding: 16px 24px;
@@ -1220,6 +1420,7 @@ a {
             font-weight: 200;
             line-height: normal;
             letter-spacing: -0.156px;
+            padding-right: 70px;
           }
           svg {
             position: absolute;
@@ -1236,10 +1437,21 @@ a {
       padding-top: 64px;
       border-top: 1px solid #292929;
       .main-footer {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         gap: 84px;
         padding-bottom: 98px;
+        @media screen and (max-width: 1050px) {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 50px;
+        }
+        @media screen and (max-width: 600px) {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px;
+        }
+        @media screen and (max-width: 500px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
         ul {
           li {
             color: rgba(255, 255, 255, 0.5);
@@ -1271,6 +1483,13 @@ a {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+        @media screen and (max-width: 1050px) {
+          gap: 20px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 40px 50px;
+        }
         ul {
           display: flex;
           gap: 16px;

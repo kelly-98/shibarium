@@ -88,7 +88,9 @@ function App() {
           <nav className="header-menu">
             <ul>
               <li>
-                <a>Documentations</a>
+                <a href="https://shibariumbot.gitbook.io/docs/">
+                  Documentations
+                </a>
               </li>
               <li>
                 <a>Resources</a>
@@ -206,11 +208,17 @@ function App() {
                 ecosystem for enthusiasts to trade crypto directly on Telegram.
               </p>
               <div className="actions">
-                <a className="btn-left">
+                <a
+                  href="https://shibariumbot.gitbook.io/docs/"
+                  className="btn-left"
+                >
                   Resources
                   <MdEast />
                 </a>
-                <a className="btn-right">
+                <a
+                  href="https://shibariumbot.gitbook.io/docs/"
+                  className="btn-right"
+                >
                   Documentations
                   <MdEast />
                 </a>
@@ -356,7 +364,9 @@ function App() {
               <div className="content-right">
                 <div className="box-exchange box-feature" data-aos="fade-left">
                   <p className="box-title">Decentralized Exchange</p>
-                  <h3>Swap tokens & collectibles.</h3>
+                  <h3>
+                    Swap tokens <br /> & collectibles.
+                  </h3>
                   <p className="text-bottom">Coming soon</p>
 
                   <div className="box-exchange-img">
