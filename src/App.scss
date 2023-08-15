@@ -8,8 +8,8 @@ input {
   outline: none;
 }
 
-html,
 body {
+  background: #000;
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
@@ -122,7 +122,6 @@ a {
 
 // Style
 .App {
-  background: #000;
   overflow: hidden;
   .container {
     width: 80%;
@@ -130,6 +129,12 @@ a {
     margin: 0 auto;
     position: relative;
     z-index: 10;
+    @media screen and (max-width: 1300px) {
+      width: 90%;
+    }
+    // @media screen and (max-width: 1050px) {
+    //   width: 95%;
+    // }
   }
   .page-header {
     padding-top: 26px;
@@ -139,6 +144,10 @@ a {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media screen and (max-width: 1050px) {
+        flex-direction: column;
+        gap: 15px;
+      }
       img {
         width: 200px;
       }
@@ -150,6 +159,9 @@ a {
           text-align: center;
           font-weight: 500;
           gap: 32px;
+          @media screen and (max-width: 1050px) {
+            gap: 20px;
+          }
         }
       }
       .header-right {
@@ -172,16 +184,9 @@ a {
           &-2 {
             transform: translateY(15px);
           }
-          // &-3 {
-          //   transform: translateY(-15px);
-          // }
           &-4 {
             transform: translateX(-15px);
           }
-
-          // &-8 {
-          //   transform: translateX(-15px);
-          // }
           &-9 {
             transform: translateX(15px);
           }
@@ -197,6 +202,16 @@ a {
         // justify-content: space-between;
         gap: 150px;
         padding-top: 115px;
+        @media screen and (max-width: 1050px) {
+          gap: 100px;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+          padding-top: 80px;
+          gap: 80px;
+        }
         .left-content {
           position: relative;
           z-index: 999;
@@ -209,12 +224,18 @@ a {
             background: -webkit-linear-gradient(#f5d1ff, #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            @media screen and (max-width: 600px) {
+              font-size: 50px;
+            }
           }
           .content {
             color: rgba(255, 255, 255, 0.8);
             font-size: 18px;
             font-weight: 400;
             line-height: 40px;
+            @media screen and (max-width: 600px) {
+              line-height: 25px;
+            }
           }
         }
         .right-content {
@@ -777,21 +798,35 @@ a {
     .section-journey {
       position: relative;
       padding: 168px 0 209px;
-      background: url("./assets/images/img-bg-section-journey.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
       .img-section-journey {
-        width: 500px;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
         position: absolute;
-        top: 0;
+        top: -10%;
+        z-index: 1;
+        &-2 {
+          position: absolute;
+          left: 10%;
+          z-index: 1;
+        }
+        &-3 {
+          position: absolute;
+          top: -15%;
+          right: -20%;
+          z-index: 1;
+        }
+        &-4 {
+          position: absolute;
+          top: 20%;
+          left: 30%;
+          z-index: 0;
+        }
       }
+
       .img-earth-journey {
         position: absolute;
-        left: 117px;
-        bottom: 55px;
+        left: 10%;
+        bottom: 10%;
       }
       .container {
         z-index: 1;
@@ -998,6 +1033,7 @@ a {
           padding-top: 82px;
           .item {
             position: relative;
+            overflow: hidden;
             padding: 32px;
             width: 341px;
             height: 466px;
@@ -1006,10 +1042,31 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            transition: all 0.3s linear;
+            color: #fff;
+            &:hover .img-earn {
+              transform: scale(1.2);
+            }
+            &-2 {
+              &:hover {
+                // background-color: #fff;
+                // color: #000;
+                .icon-coin3 {
+                  transform: rotate(0);
+                }
+                .icon-coin1 {
+                  transform: rotate(0) translateX(20px);
+                }
+                .icon-coin2 {
+                  transform: rotate(0) translateX(50px);
+                }
+              }
+            }
             .img-earn {
               position: absolute;
               top: 0;
               left: 0;
+              transition: all 0.3s linear;
             }
             .icon-earn {
               position: absolute;
@@ -1020,27 +1077,29 @@ a {
             .icon-coin1,
             .icon-coin2,
             .icon-coin3 {
+              transition: all 0.5s linear;
               position: absolute;
               width: 236px;
             }
             .icon-coin1 {
               top: 0;
-              left: 50%;
-              transform: translateX(-50%);
+              left: 20%;
+              transform: rotate(20deg);
               z-index: 1;
             }
             .icon-coin2 {
-              top: 25px;
+              top: 55px;
               z-index: 3;
+              transform: rotate(-20deg);
             }
             .icon-coin3 {
-              top: 66px;
+              top: 96px;
               left: 114px;
               z-index: 2;
+              transform: rotate(20deg);
             }
             .title {
               z-index: 1;
-              color: #fff;
               font-size: 13px;
               font-style: normal;
               font-weight: 600;
@@ -1050,9 +1109,9 @@ a {
               text-align: left;
             }
             .sub-title {
+              color: rgba(255, 255, 255, 0.7);
               z-index: 1;
               max-width: 215px;
-              color: rgba(255, 255, 255, 0.7);
               font-size: 27.432px;
               font-style: normal;
               font-weight: 700;
@@ -1067,7 +1126,6 @@ a {
             .des {
               z-index: 1;
               padding-top: 16px;
-              color: #fff;
               font-size: 16px;
               font-style: normal;
               font-weight: 300;
@@ -1076,19 +1134,41 @@ a {
               max-width: 250px;
             }
             &.item-discover {
-              background: url("./assets/images/img-bg-discover.svg");
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: top center;
+              // background: url("./assets/images/img-bg-discover.svg");
+              // background-repeat: no-repeat;
+              // background-size: cover;
+              // background-position: top center;
+              transition: all 0.5s linear;
+              &:hover {
+                .img-earth1 {
+                  transform: translateY(-20px);
+                }
+                .item-discover-bg {
+                  transform: scale(1.2);
+                }
+                .img-earth2 {
+                  transform: translateX(-20px);
+                }
+                .img-bone {
+                  transform: translate(-20px, -20px);
+                }
+              }
               .img-earth1,
               .img-bone,
-              .img-earth2 {
+              .img-earth2,
+              .item-discover-bg {
                 position: absolute;
+                transition: all 0.5s linear;
               }
               .img-earth1 {
                 left: 0;
                 bottom: 133px;
                 width: 234px;
+              }
+              .item-discover-bg {
+                top: 0;
+                left: 0;
+                right: 0;
               }
               .img-bone {
                 width: 41px;

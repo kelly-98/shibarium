@@ -54,17 +54,32 @@ import IconEllippse from "./assets/images/icon-ellipse.svg";
 import IconTriangle from "./assets/images/icon-triangle.svg";
 import ImageEcoEarn from "./assets/images/img-eco-earn.svg";
 import IconEcoEarn from "./assets/images/icon-eco-earn.svg";
+import IconCoin from "./assets/images/icon-coin.svg";
 import IconCoin1 from "./assets/images/icon-coin-1.svg.svg";
 import IconCoin2 from "./assets/images/icon-coin-2.svg.svg";
 import IconCoin3 from "./assets/images/icon-coin-3.svg.svg";
 import ImageEarth1 from "./assets/images/img-earth-1.svg";
 import ImageEarth2 from "./assets/images/img-earth-2.svg";
 import ImageBone from "./assets/images/img-bone.svg";
+import ImageDiscoverBg from "./assets/images/img-bg-discover.svg";
 import ImageBgJourney from "./assets/images/img-bg-section-journey2.svg";
 import ImageEarthJourney from "./assets/images/img-earth-journey.svg";
+import ImageBgJourney2 from "./assets/images/img-bg-section-journey.svg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./App.scss";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="App">
       <header className="page-header">
@@ -83,10 +98,10 @@ function App() {
               </li>
             </ul>
           </nav>
-          <div className="header-right">
+          <a className="header-right">
             <span>Get $SBOT</span>
             <MdEast />
-          </div>
+          </a>
         </div>
       </header>
 
@@ -164,20 +179,20 @@ function App() {
           </div>
 
           <div className="container">
-            <div className="left-content">
+            <div data-aos="fade-right" className="left-content">
               <h1 className="title">Easy to trade on Shibarium.</h1>
               <p className="content">
                 The first trading BOT on Shibarium. Lightning speed and
                 professional trading features.
               </p>
             </div>
-            <div className="right-content">
+            <div data-aos="fade-left" className="right-content">
               <img src={ImagePhone} alt="" />
             </div>
           </div>
         </section>
 
-        <section className="section-vision">
+        <section data-aos="fade-up" className="section-vision">
           <div className="container">
             <div className="left-content">
               <p className="content-top">OUR VISION ON SHIBARIUM</p>
@@ -250,11 +265,11 @@ function App() {
               </p>
             </div>
             <div className="content-bottom">
-              <div className="content-bottom-left rotate">
+              <div className="content-bottom-left rotate" data-aos="fade-up">
                 <img src={ImageShiba} alt="" />
               </div>
               <div className="core-boxes">
-                <div className="box">
+                <div className="box" data-aos="fade-right">
                   <div className="box-img">
                     <img src={ImageTrading} alt="" />
                   </div>
@@ -265,7 +280,7 @@ function App() {
                     excellent accessibility.
                   </p>
                 </div>
-                <div className="box">
+                <div className="box" data-aos="fade-left">
                   <div className="box-img">
                     <img src={ImageSniper} alt="" />
                   </div>
@@ -276,7 +291,7 @@ function App() {
                     completed in the first block.
                   </p>
                 </div>
-                <div className="box">
+                <div className="box" data-aos="fade-right">
                   <div className="box-img">
                     <img src={ImagePrivate} alt="" />
                   </div>
@@ -288,7 +303,7 @@ function App() {
                     increases dramatically.
                   </p>
                 </div>
-                <div className="box">
+                <div className="box" data-aos="fade-left">
                   <div className="box-img custom-size">
                     <img src={ImageExchanges} alt="" />
                   </div>
@@ -323,7 +338,7 @@ function App() {
               </p>
             </div>
             <div className="section-bottom">
-              <div className="content-left">
+              <div className="content-left" data-aos="fade-right">
                 <div className="box-chain box-feature">
                   <p className="box-title">Cross-chain Bridge</p>
                   <div className="box-img">
@@ -339,7 +354,7 @@ function App() {
                 </div>
               </div>
               <div className="content-right">
-                <div className="box-exchange box-feature">
+                <div className="box-exchange box-feature" data-aos="fade-left">
                   <p className="box-title">Decentralized Exchange</p>
                   <h3>Swap tokens & collectibles.</h3>
                   <p className="text-bottom">Coming soon</p>
@@ -357,7 +372,7 @@ function App() {
                     />
                   </div>
                 </div>
-                <div className="box-row">
+                <div className="box-row" data-aos="fade-up">
                   <div className="box-farm box-feature">
                     <p className="box-title">Yield Farm</p>
                     <h3>Provide liquidity and earn rewards.</h3>
@@ -374,7 +389,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section-values">
+        <section data-aos="fade-up" className="section-values">
           <div className="value-p value-p-1">
             <img src={Value2} alt="" />
           </div>
@@ -430,13 +445,35 @@ function App() {
           <div className="img-section-journey">
             <img src={ImageBgJourney} alt="" />
           </div>
+          <div className="img-section-journey-2">
+            <img src={ImageBgJourney2} alt="" />
+          </div>
+          <div className="img-section-journey-3">
+            <img src={ImageBgJourney2} alt="" />
+          </div>
+          <div className="img-section-journey-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="864"
+              height="562"
+              viewBox="0 0 864 562"
+              fill="none"
+            >
+              <path
+                d="M244.483 278.541C223.684 307.671 214.739 334.428 218.815 355.044C222.883 375.622 239.742 389.128 267.135 393.6C294.537 398.075 331.046 393.269 371.508 379.836C411.966 366.404 454.308 345.034 492.547 318.744C530.787 292.455 562.979 262.582 584.58 233.352C606.186 204.116 616.073 177.042 612.93 155.948C611.358 145.413 606.575 136.626 598.861 129.834C591.143 123.039 580.48 118.227 567.142 115.657C540.455 110.524 504.45 114.651 464.206 127.486M249.203 230.642C193.77 275.2 155.989 320.517 142.615 358.425C135.931 377.374 135.573 393.825 141.229 407.166C146.883 420.504 158.566 430.779 176.055 437.344C211.052 450.481 266.922 447.869 333.634 429.917C400.334 411.968 473.443 379.878 539.794 339.423C606.146 298.966 661.364 252.812 695.515 209.276C712.589 187.509 723.829 167.12 729.002 148.972C734.176 130.823 733.28 114.931 726.116 102.124C718.953 89.3173 705.733 79.9726 687.283 74.3722C668.827 68.7801 645.16 66.9369 617.138 69.1294C561.091 73.5192 491.375 93.7413 420.535 126.178M10.2303 519.633C58.0374 600.799 285.68 559.7 518.685 427.837C751.689 295.974 901.819 123.281 854.016 42.1166C806.207 -39.0505 578.566 2.04479 345.56 133.91C112.556 265.773 -37.5768 438.467 10.2303 519.633Z"
+                stroke="white"
+                stroke-opacity="0.2"
+                stroke-width="0.922546"
+              />
+            </svg>
+          </div>
           <div className="img-earth-journey">
             <img src={ImageEarthJourney} alt="" />
           </div>
           <div className="container">
             <h3 className="section-title">Join the journey.</h3>
             <div className="journey-list">
-              <div className="journey-item">
+              <div className="journey-item" data-aos="fade-up">
                 <p className="title">connect</p>
                 <div className="column-between">
                   <div>
@@ -457,7 +494,8 @@ function App() {
                       width="32"
                       height="33"
                       viewBox="0 0 32 33"
-                      fill="none">
+                      fill="none"
+                    >
                       <path
                         d="M4.08824 30.1999C5.79383 30.1999 7.17648 28.8173 7.17648 27.1117C7.17648 25.4061 5.79383 24.0234 4.08824 24.0234C2.38265 24.0234 1 25.4061 1 27.1117C1 28.8173 2.38265 30.1999 4.08824 30.1999Z"
                         stroke="white"
@@ -492,7 +530,11 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="journey-item">
+              <div
+                className="journey-item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <p className="title">Research</p>
                 <div className="column-between">
                   <div>
@@ -513,7 +555,8 @@ function App() {
                       width="34"
                       height="32"
                       viewBox="0 0 34 32"
-                      fill="none">
+                      fill="none"
+                    >
                       <path
                         d="M17 30.6604L32 16.3083L17.0002 1.95703M17 30.6604L2 16.3083L17.0002 1.95703M17 30.6604L9.06396 16.3083L17.0002 1.95703M17 30.6604L24.9363 16.3083L17.0002 1.95703"
                         stroke="white"
@@ -523,7 +566,11 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="journey-item">
+              <div
+                className="journey-item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <p className="title">Trade</p>
                 <div className="column-between">
                   <div>
@@ -544,7 +591,8 @@ function App() {
                       width="17"
                       height="16"
                       viewBox="0 0 17 16"
-                      fill="none">
+                      fill="none"
+                    >
                       <path
                         d="M16.25 8C16.25 11.9619 12.8237 15.25 8.5 15.25C4.17631 15.25 0.75 11.9619 0.75 8C0.75 4.03812 4.17631 0.75 8.5 0.75C12.8237 0.75 16.25 4.03812 16.25 8Z"
                         stroke="white"
@@ -557,7 +605,8 @@ function App() {
                       width="26"
                       height="19"
                       viewBox="0 0 26 19"
-                      fill="none">
+                      fill="none"
+                    >
                       <path
                         d="M9.99176 1H2L13.0661 16.9351L24.1322 1H15.1404L14.6743 1.0932C13.2826 1.3715 11.8496 1.3715 10.4579 1.0932L9.99176 1Z"
                         stroke="white"
@@ -574,7 +623,7 @@ function App() {
 
         <section className="section-community">
           <div className="container">
-            <div className="left-content">
+            <div className="left-content" data-aos="fade-right">
               <h3>Meet the passionate community.</h3>
               <p>
                 Become part of a rapidly expanding community of visionaries and
@@ -584,7 +633,7 @@ function App() {
             </div>
             <div className="right-content">
               <ul>
-                <li className="row">
+                <li className="row" data-aos="fade-left">
                   <FaTelegramPlane color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -599,7 +648,7 @@ function App() {
                     </p>
                   </div>
                 </li>
-                <li className="row">
+                <li className="row" data-aos="fade-left" data-aos-delay="100">
                   <FaTwitter color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -614,7 +663,7 @@ function App() {
                     </p>
                   </div>
                 </li>
-                <li className="row">
+                <li className="row" data-aos="fade-left" data-aos-delay="200">
                   <IoLogoDiscord color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -629,7 +678,7 @@ function App() {
                     </p>
                   </div>
                 </li>
-                <li className="row">
+                <li className="row" data-aos="fade-left" data-aos-delay="300">
                   <FaMedium color="#fff" size={32} />
                   <div className="content">
                     <h4>
@@ -649,7 +698,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section-enter-ecosystem">
+        <section className="section-enter-ecosystem" data-aos="fade-up">
           <div className="container">
             <h3>Enter the Ecosystem</h3>
             <p>
@@ -673,15 +722,15 @@ function App() {
                   Best support for Shibarium users in trading.
                 </p>
               </div>
-              <div className="item">
+              <div className="item item-2">
                 <div className="icon-coin1">
-                  <img src={IconCoin1} alt="" />
+                  <img src={IconCoin} alt="" />
                 </div>
                 <div className="icon-coin2">
-                  <img src={IconCoin2} alt="" />
+                  <img src={IconCoin} alt="" />
                 </div>
                 <div className="icon-coin3">
-                  <img src={IconCoin3} alt="" />
+                  <img src={IconCoin} alt="" />
                 </div>
                 <p className="title">Earn</p>
                 <p className="sub-title">
@@ -693,9 +742,13 @@ function App() {
                 </p>
               </div>
               <div className="item item-discover">
+                <div className="item-discover-bg">
+                  <img src={ImageDiscoverBg} alt="" />
+                </div>
                 <div className="img-earth1">
                   <img src={ImageEarth1} alt="" />
                 </div>
+
                 <div className="img-bone">
                   <img src={ImageBone} alt="" />
                 </div>
@@ -715,7 +768,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section-become-partner">
+        <section className="section-become-partner" data-aos="fade-up">
           <div className="container row justify-center">
             <div className="left-content">
               <h3>Become our partner.</h3>
@@ -729,7 +782,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="page-footer">
+      <footer className="page-footer" data-aos="fade-down">
         <div className="container">
           <div className="main-footer">
             <ul>
